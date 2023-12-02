@@ -10,7 +10,6 @@ import styles from './FieldsForm.module.css';
 const initialValues = {
 	name: '',
 	size: '',
-	workerId: '',
 };
 
 const FieldsForm = ({ onFieldAdded }) => {
@@ -32,7 +31,6 @@ const FieldsForm = ({ onFieldAdded }) => {
 		e.preventDefault();
 		const response = await fieldServices.create({
 			...formData,
-			workersIds: [formData.workerId],
 		});
 
 		if (response.status === 201) {
@@ -64,16 +62,6 @@ const FieldsForm = ({ onFieldAdded }) => {
 				onChange={handleChange}
 			/>
 
-			{/* <JobField
-				htmlFor='worker'
-				label='Работник'
-				value={formData.workerId}
-				name='workerId'
-				onChange={handleChange}
-				data={workerData}
-				optionText='Избор на работник'
-				requred={false}
-			/> */}
 			<button className={styles['btn-add']}>Добави</button>
 		</form>
 	);
