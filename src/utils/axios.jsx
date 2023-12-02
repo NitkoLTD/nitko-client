@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://127.0.0.1:8000/api/';
+const baseUrl = 'https://nitko-api.onrender.com/api/';
 
 const tokenString = localStorage.getItem('authTokens');
 const token = tokenString ? JSON.parse(tokenString) : null;
