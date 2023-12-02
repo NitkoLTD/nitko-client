@@ -72,6 +72,7 @@ const FieldsForm = ({ onFieldAdded }) => {
 				onChange={handleChange}
 				data={workerData}
 				optionText='Избор на работник'
+				requred={false}
 			/>
 			<button className={styles['btn-add']}>Добави</button>
 		</form>
