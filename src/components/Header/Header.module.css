@@ -1,0 +1,28 @@
+.nav {
+    background-color: #f2f2f2;
+    display: flex;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.375em;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
