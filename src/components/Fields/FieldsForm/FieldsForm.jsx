@@ -64,7 +64,7 @@ const FieldsForm = ({ onFieldAdded }) => {
 				onChange={handleChange}
 			/>
 
-			<JobField
+			{/* <JobField
 				htmlFor='worker'
 				label='Работник'
 				value={formData.workerId}
@@ -73,7 +73,7 @@ const FieldsForm = ({ onFieldAdded }) => {
 				data={workerData}
 				optionText='Избор на работник'
 				requred={false}
-			/>
+			/> */}
 			<button className={styles['btn-add']}>Добави</button>
 		</form>
 	);
